@@ -11,14 +11,18 @@ interface TaskProps {
 const Task = ({ checked, title, onChange, id, disabled }: TaskProps) => {
   return (
     <div className="Task">
-      <input
-        type="checkbox"
-        className="Task-checkbox"
-        checked={checked}
-        onChange={() => onChange(id, checked)}
-        disabled={disabled}
-      />
-      <p>{title}</p>
+      <label
+        style={{ marginTop: '1rem', marginBottom: '1rem', cursor: 'pointer' }}
+      >
+        <input
+          type="checkbox"
+          className="Task-checkbox"
+          checked={checked}
+          onChange={() => onChange(id, checked)}
+          disabled={disabled}
+        />
+        {title}
+      </label>
     </div>
   );
 };
