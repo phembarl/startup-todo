@@ -1,0 +1,24 @@
+.Phases {
+  &-input {
+    width: 75%;
+    height: 2rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #000;
+  }
+
+  &-btn {
+    color: #fff;
+    background-color: #000;
+    height: 2.2rem;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+
+  &-fact {
+    // text-align: center;
+    margin-left: 4rem;
+    font-size: 1.8rem;
+  }
+}
