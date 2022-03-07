@@ -43,6 +43,12 @@
     border-radius: 5px;
     border: 1px solid #000;
     height: 1.5rem;
+
+    padding-left: 0.5rem;
+
+    &::placeholder {
+      font-size: 1rem;
+    }
   }
 
   &-btn {
@@ -51,5 +57,9 @@
     height: 1.7rem;
     border: 2px solid #000;
     border-radius: 5px;
+
+    &:disabled {
+      cursor: not-allowed;
+    }
   }
 }

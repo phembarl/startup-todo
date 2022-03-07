@@ -57,12 +57,13 @@ const Phase = ({
       <div>
         <form onSubmit={handleSubmit}>
           <input
+            placeholder="New task"
             type="text"
             value={newTaskTitle}
             onChange={({ target }) => setNewTaskTitle(target.value)}
             className="Phase-input"
           />
-          <button className="Phase-btn" type="submit">
+          <button className="Phase-btn" type="submit" disabled={!newTaskTitle}>
             Add New Task
           </button>
         </form>

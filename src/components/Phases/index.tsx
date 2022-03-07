@@ -133,13 +133,18 @@ const Phases = () => {
       <div style={{ marginBottom: '1.5rem' }}>
         <form onSubmit={addPhase}>
           <input
+            placeholder="Add a new phase"
             value={newPhaseTitle}
             onChange={({ target }) => setNewPhaseTitle(target.value)}
             style={{ marginBottom: '2rem' }}
             type="text"
             className="Phases-input"
           />
-          <button type="submit" className="Phases-btn">
+          <button
+            type="submit"
+            className="Phases-btn"
+            disabled={!newPhaseTitle}
+          >
             Add New Phase
           </button>
         </form>
